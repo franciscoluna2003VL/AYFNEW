@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto - AYF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AYF</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#cart" id="cart-icon">🛒<span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="product-details">
+        <h2>Menú de Ropa</h2>
+        <div class="product-menu">
+            <div class="menu-item">
+                <img src="1.jpg" alt="Producto 1" class="product-image" data-name="Producto 1" data-price="$49.99">
+                <p>Producto 1</p>
+                <span>$49.99</span>
+            </div>
+            <div class="menu-item">
+                <img src="2.jpg" alt="Producto 2" class="product-image" data-name="Producto 2" data-price="$59.99">
+                <p>Producto 2</p>
+                <span>$59.99</span>
+            </div>
+            <div class="menu-item">
+                <img src="10.jpg" alt="Producto 3" class="product-image" data-name="Producto 3" data-price="$39.99">
+                <p>Producto 3</p>
+                <span>$39.99</span>
+            </div>
+            <!-- Agrega más productos aquí si es necesario -->
+        </div>
+    </section>
+
+    <!-- Modal para Imagen Ampliada -->
+    <div id="image-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <img id="modal-image" src="" alt="Imagen Ampliada">
+            <h3 id="modal-product-name"></h3>
+            <p id="modal-product-price"></p>
+            <button id="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+
+     <!-- Modal del Carrito -->
+     <div id="cart" class="modal-overlay">
+        <div class="modal-content">
+            <span id="close-cart">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <button id="checkout-button">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 AYF, Monterrey, NL, México. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="modal.js"></script>
+</body>
+</html>
+
